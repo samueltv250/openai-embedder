@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>ProviBot</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ProviBot</h1>
+        <form method="POST" action="{{ url_for('index') }}">
+            <label for="question">Haz una pregunta:</label>
+            <input type="text" name="question" id="question" required>
+            <button type="submit">Enviar</button>
+        </form>
+        {% if answer %}
+        <div class="answer">
+            <h2>Respuesta:</h2>
+            <p>{{ answer }}</p>
+            {% if link %}
+            <p><a href="{{ link }}" target="_blank">Más información</a></p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
