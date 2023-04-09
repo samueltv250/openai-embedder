@@ -102,7 +102,6 @@ ptyprocess==0.7.0
 pure-eval==0.2.2
 pyasn1==0.4.8
 pyasn1-modules==0.2.7
-PyBluez @ git+https://github.com/pybluez/pybluez.git@4d46ce14d9e888e3b0c65d5d3ba2a703f8e5e861
 pycparser==2.21
 pydantic==1.10.6
 Pygments==2.14.0
