@@ -119,7 +119,6 @@ rapidfuzz==2.13.7
 regex==2022.10.31
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
-scipy==1.9.1
 sec-api==1.0.15
 sec-edgar-downloader==4.3.0
 selenium==4.8.3
